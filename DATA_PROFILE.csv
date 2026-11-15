@@ -1,0 +1,7 @@
+file,rows,columns,duplicate_first_key,zone_distinct,category_distinct,mrp_min,mrp_max,cost_price_min,cost_price_max,payment_mode_distinct,amount_paid_min,amount_paid_max,quantity_min,quantity_max,unit_price_min,unit_price_max,discount_pct_min,discount_pct_max,order_amount_min,order_amount_max,order_status_distinct,delivery_minutes_min,delivery_minutes_max,loyalty_tier_distinct
+stores.csv,15,8,0,East | North | South | West,,,,,,,,,,,,,,,,,,,,
+products.csv,152,10,2,,Dairy & Bakery | Fruits & Vegetables | Household | Personal Care | Snacks & Beverages | Staples,-203.0,883.0,6.79,631.79,,,,,,,,,,,,,,,
+payments.csv,2228,7,4,,,,,,,CARD | Card | Cash on Delivery | Cashh | UPI | UPI  | Wallet | cod | upi,-1593.0,9576.0,,,,,,,,,,,,
+orders.csv,2412,13,12,,,,,,,CARD | Card | Cash on Delivery | Cashh | UPI | UPI  | Wallet | cod | upi,,,-3.0,5.0,10.0,883.0,0.0,250.0,-1593.0,9576.0,CANCELLED | DELIVERED | Pending?? | RETURNED | delivered,8.0,1440.0,
+customers.csv,405,10,5,,,,,,,,,,,,,,,,,,,,,BRONZE | Bronze | Gold | Platinum | SILVER | Silver | bronze
+orders_2026-10-01_increment.csv,160,13,0,,,,,,,Card | Cash on Delivery | UPI | Wallet,,,1.0,4.0,10.0,883.0,0.0,20.0,11.0,2052.0,DELIVERED | RETURNED,8.0,34.0,

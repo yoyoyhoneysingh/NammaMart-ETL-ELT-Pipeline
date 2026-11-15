@@ -1,0 +1,100 @@
+file,row_key,column,problem,quality_dimension,proposed_rule,severity
+stores.csv,multiple,zone,1 missing/blank values,Completeness,Required field check; review nullable fields,Critical if required
+products.csv,multiple,category,3 missing/blank values,Completeness,Required field check; review nullable fields,Critical if required
+products.csv,multiple,product_id,Duplicate keys,Uniqueness,Keep latest valid key; quarantine duplicates,Critical
+payments.csv,multiple,gateway_ref,301 missing/blank values,Completeness,Required field check; review nullable fields,Critical if required
+payments.csv,multiple,payment_id,Duplicate keys,Uniqueness,Keep latest valid key; quarantine duplicates,Critical
+orders.csv,multiple,order_ts,2 missing/blank values,Completeness,Required field check; review nullable fields,Critical if required
+orders.csv,multiple,customer_id,18 missing/blank values,Completeness,Required field check; review nullable fields,Critical if required
+orders.csv,multiple,delivery_minutes,164 missing/blank values,Completeness,Required field check; review nullable fields,Critical if required
+orders.csv,multiple,order_id,Duplicate keys,Uniqueness,Keep latest valid key; quarantine duplicates,Critical
+orders.csv,ORD000469,quantity,Non-positive or missing quantity,Accuracy,quantity > 0,Critical
+orders.csv,ORD001296,quantity,Non-positive or missing quantity,Accuracy,quantity > 0,Critical
+orders.csv,ORD001459,quantity,Non-positive or missing quantity,Accuracy,quantity > 0,Critical
+orders.csv,ORD000867,quantity,Non-positive or missing quantity,Accuracy,quantity > 0,Critical
+orders.csv,ORD000462,quantity,Non-positive or missing quantity,Accuracy,quantity > 0,Critical
+orders.csv,ORD002360,quantity,Non-positive or missing quantity,Accuracy,quantity > 0,Critical
+orders.csv,ORD001724,quantity,Non-positive or missing quantity,Accuracy,quantity > 0,Critical
+orders.csv,ORD000099,quantity,Non-positive or missing quantity,Accuracy,quantity > 0,Critical
+orders.csv,ORD001124,quantity,Non-positive or missing quantity,Accuracy,quantity > 0,Critical
+orders.csv,ORD001384,quantity,Non-positive or missing quantity,Accuracy,quantity > 0,Critical
+orders.csv,ORD002103,order_amount,Amount differs from quantity × price after discount,Accuracy,Difference <= 0.02,Critical
+orders.csv,ORD002305,order_amount,Amount differs from quantity × price after discount,Accuracy,Difference <= 0.02,Critical
+orders.csv,ORD002004,order_amount,Amount differs from quantity × price after discount,Accuracy,Difference <= 0.02,Critical
+orders.csv,ORD000845,order_amount,Amount differs from quantity × price after discount,Accuracy,Difference <= 0.02,Critical
+orders.csv,ORD000964,order_amount,Amount differs from quantity × price after discount,Accuracy,Difference <= 0.02,Critical
+orders.csv,ORD002298,order_amount,Amount differs from quantity × price after discount,Accuracy,Difference <= 0.02,Critical
+orders.csv,ORD002031,order_amount,Amount differs from quantity × price after discount,Accuracy,Difference <= 0.02,Critical
+orders.csv,ORD000801,order_amount,Amount differs from quantity × price after discount,Accuracy,Difference <= 0.02,Critical
+orders.csv,ORD000880,order_amount,Amount differs from quantity × price after discount,Accuracy,Difference <= 0.02,Critical
+orders.csv,ORD001274,order_amount,Amount differs from quantity × price after discount,Accuracy,Difference <= 0.02,Critical
+orders.csv,ORD000677,order_amount,Amount differs from quantity × price after discount,Accuracy,Difference <= 0.02,Critical
+orders.csv,ORD002223,order_amount,Amount differs from quantity × price after discount,Accuracy,Difference <= 0.02,Critical
+orders.csv,ORD002128,order_amount,Amount differs from quantity × price after discount,Accuracy,Difference <= 0.02,Critical
+orders.csv,ORD001624,order_amount,Amount differs from quantity × price after discount,Accuracy,Difference <= 0.02,Critical
+orders.csv,ORD002244,order_amount,Amount differs from quantity × price after discount,Accuracy,Difference <= 0.02,Critical
+orders.csv,ORD001755,order_amount,Amount differs from quantity × price after discount,Accuracy,Difference <= 0.02,Critical
+orders.csv,ORD001468,order_amount,Amount differs from quantity × price after discount,Accuracy,Difference <= 0.02,Critical
+orders.csv,ORD001237,order_amount,Amount differs from quantity × price after discount,Accuracy,Difference <= 0.02,Critical
+orders.csv,ORD001066,order_status,Unknown status,Validity,Allowed statuses only,Critical
+orders.csv,ORD000500,order_status,Unknown status,Validity,Allowed statuses only,Critical
+orders.csv,ORD000153,order_status,Unknown status,Validity,Allowed statuses only,Critical
+orders.csv,ORD001970,order_status,Unknown status,Validity,Allowed statuses only,Critical
+orders.csv,ORD001637,order_status,Unknown status,Validity,Allowed statuses only,Critical
+orders.csv,ORD001554,delivery_minutes,Missing or >120-minute delivery,Accuracy,Delivered must have 0–120 minutes,Critical
+orders.csv,ORD001800,delivery_minutes,Missing or >120-minute delivery,Accuracy,Delivered must have 0–120 minutes,Critical
+orders.csv,ORD001037,delivery_minutes,Missing or >120-minute delivery,Accuracy,Delivered must have 0–120 minutes,Critical
+orders.csv,ORD002101,delivery_minutes,Missing or >120-minute delivery,Accuracy,Delivered must have 0–120 minutes,Critical
+orders.csv,ORD000455,delivery_minutes,Missing or >120-minute delivery,Accuracy,Delivered must have 0–120 minutes,Critical
+orders.csv,ORD000731,delivery_minutes,Missing or >120-minute delivery,Accuracy,Delivered must have 0–120 minutes,Critical
+orders.csv,ORD001277,delivery_minutes,Missing or >120-minute delivery,Accuracy,Delivered must have 0–120 minutes,Critical
+orders.csv,ORD000326,delivery_minutes,Missing or >120-minute delivery,Accuracy,Delivered must have 0–120 minutes,Critical
+orders.csv,ORD001515,delivery_minutes,Missing or >120-minute delivery,Accuracy,Delivered must have 0–120 minutes,Critical
+orders.csv,ORD002229,delivery_minutes,Missing or >120-minute delivery,Accuracy,Delivered must have 0–120 minutes,Critical
+orders.csv,ORD000878,delivery_minutes,Missing or >120-minute delivery,Accuracy,Delivered must have 0–120 minutes,Critical
+orders.csv,ORD001104,delivery_minutes,Missing or >120-minute delivery,Accuracy,Delivered must have 0–120 minutes,Critical
+orders.csv,ORD000020,delivery_minutes,Missing or >120-minute delivery,Accuracy,Delivered must have 0–120 minutes,Critical
+orders.csv,ORD000424,delivery_minutes,Missing or >120-minute delivery,Accuracy,Delivered must have 0–120 minutes,Critical
+customers.csv,multiple,email,4 missing/blank values,Completeness,Required field check; review nullable fields,Critical if required
+customers.csv,multiple,city,6 missing/blank values,Completeness,Required field check; review nullable fields,Critical if required
+customers.csv,multiple,customer_id,Duplicate keys,Uniqueness,Keep latest valid key; quarantine duplicates,Critical
+orders.csv,ORD002255,customer_id,No matching key in customers.csv,Consistency,Foreign key must exist,Critical
+orders.csv,ORD000701,customer_id,No matching key in customers.csv,Consistency,Foreign key must exist,Critical
+orders.csv,ORD000997,customer_id,No matching key in customers.csv,Consistency,Foreign key must exist,Critical
+orders.csv,ORD000580,customer_id,No matching key in customers.csv,Consistency,Foreign key must exist,Critical
+orders.csv,ORD002019,customer_id,No matching key in customers.csv,Consistency,Foreign key must exist,Critical
+orders.csv,ORD002262,customer_id,No matching key in customers.csv,Consistency,Foreign key must exist,Critical
+orders.csv,ORD002149,customer_id,No matching key in customers.csv,Consistency,Foreign key must exist,Critical
+orders.csv,ORD002367,customer_id,No matching key in customers.csv,Consistency,Foreign key must exist,Critical
+orders.csv,ORD001332,customer_id,No matching key in customers.csv,Consistency,Foreign key must exist,Critical
+orders.csv,ORD001918,customer_id,No matching key in customers.csv,Consistency,Foreign key must exist,Critical
+orders.csv,ORD002156,customer_id,No matching key in customers.csv,Consistency,Foreign key must exist,Critical
+orders.csv,ORD000583,customer_id,No matching key in customers.csv,Consistency,Foreign key must exist,Critical
+orders.csv,ORD000790,customer_id,No matching key in customers.csv,Consistency,Foreign key must exist,Critical
+orders.csv,ORD000764,customer_id,No matching key in customers.csv,Consistency,Foreign key must exist,Critical
+orders.csv,ORD002219,customer_id,No matching key in customers.csv,Consistency,Foreign key must exist,Critical
+orders.csv,ORD001532,customer_id,No matching key in customers.csv,Consistency,Foreign key must exist,Critical
+orders.csv,ORD000022,customer_id,No matching key in customers.csv,Consistency,Foreign key must exist,Critical
+orders.csv,ORD001373,customer_id,No matching key in customers.csv,Consistency,Foreign key must exist,Critical
+orders.csv,ORD000986,product_id,No matching key in products.csv,Consistency,Foreign key must exist,Critical
+orders.csv,ORD001058,product_id,No matching key in products.csv,Consistency,Foreign key must exist,Critical
+orders.csv,ORD001685,product_id,No matching key in products.csv,Consistency,Foreign key must exist,Critical
+orders.csv,ORD000070,product_id,No matching key in products.csv,Consistency,Foreign key must exist,Critical
+orders.csv,ORD000789,product_id,No matching key in products.csv,Consistency,Foreign key must exist,Critical
+orders.csv,ORD000596,product_id,No matching key in products.csv,Consistency,Foreign key must exist,Critical
+orders.csv,ORD000134,product_id,No matching key in products.csv,Consistency,Foreign key must exist,Critical
+orders.csv,ORD000965,product_id,No matching key in products.csv,Consistency,Foreign key must exist,Critical
+orders.csv,ORD002179,product_id,No matching key in products.csv,Consistency,Foreign key must exist,Critical
+orders.csv,ORD001799,store_id,No matching key in stores.csv,Consistency,Foreign key must exist,Critical
+orders.csv,ORD001046,store_id,No matching key in stores.csv,Consistency,Foreign key must exist,Critical
+orders.csv,ORD001492,store_id,No matching key in stores.csv,Consistency,Foreign key must exist,Critical
+orders.csv,ORD001275,store_id,No matching key in stores.csv,Consistency,Foreign key must exist,Critical
+orders.csv,ORD002126,store_id,No matching key in stores.csv,Consistency,Foreign key must exist,Critical
+payments.csv,PAY0002219,order_id,No matching key in orders.csv,Consistency,Foreign key must exist,Critical
+payments.csv,PAY0002220,order_id,No matching key in orders.csv,Consistency,Foreign key must exist,Critical
+payments.csv,PAY0002223,order_id,No matching key in orders.csv,Consistency,Foreign key must exist,Critical
+payments.csv,PAY0002221,order_id,No matching key in orders.csv,Consistency,Foreign key must exist,Critical
+payments.csv,PAY0002224,order_id,No matching key in orders.csv,Consistency,Foreign key must exist,Critical
+payments.csv,PAY0002218,order_id,No matching key in orders.csv,Consistency,Foreign key must exist,Critical
+payments.csv,PAY0002222,order_id,No matching key in orders.csv,Consistency,Foreign key must exist,Critical
+payments.csv,PAY0002217,order_id,No matching key in orders.csv,Consistency,Foreign key must exist,Critical
